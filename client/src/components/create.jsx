@@ -7,7 +7,7 @@ function Create(){
     const [message, setMessage] = useState()
 
     useEffect(() =>{
-        axios.get('http://localhost:3000/create')
+        axios.get('https://gg-server.vercel.app/create')
         .then(res => console.log(res.data))
         .catch(err => console.log(err))
     })

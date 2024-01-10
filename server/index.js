@@ -4,7 +4,16 @@ const mongoose = require('mongoose')
 const app = express();
 
 
-app.use(cors())
+app.use(cors(
+    {
+        origin:['https://gg-chi-henna.vercel.app/'],
+        methods:[
+            "GET",
+            "POST"
+        ],
+        credentials:true
+    }
+))
 app.use(express.json())
 
 app.get('/create', (req,res)=>{
