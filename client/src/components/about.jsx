@@ -5,7 +5,7 @@ function About(){
         <>
         <h2>About Page</h2>
 
-        <button onClick={() =>{navigate('/')}}>about</button>
+        <button onClick={() =>{navigate('/create')}}>Create</button>
         </>
     )
 }
