@@ -6,7 +6,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:['https://gg-chi-henna.vercel.app/'],
+        origin:['https://gg-chi-henna.vercel.app'],
         methods:[
             "GET",
             "POST"
